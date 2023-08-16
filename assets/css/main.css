@@ -1,0 +1,18 @@
+/* General rules and best practices */
+
+a,
+button {
+  touch-action: manipulation;
+  background-color: transparent;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/*
+  BEST PRACTICES: optimal length for a paragraph
+*/
+p {
+  max-width: clamp(52ch, 64ch, 75ch);
+}
