@@ -1,0 +1,172 @@
+/* Blackout Sunrise */
+@font-face {
+  font-family: 'Blackout';
+  src: url('~/assets/fonts/blackout/blackout_sunrise-webfont.eot');
+  src: local('☺'),
+    url('~/assets/fonts/blackout/blackout_sunrise-webfont.woff') format('woff'),
+    url('~/assets/fonts/blackout/blackout_sunrise-webfont.ttf')
+      format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Blackout Midnight */
+@font-face {
+  font-family: 'Blackout';
+  src: url('~/assets/fonts/blackout/blackout_midnight-webfont.eot');
+  src: local('☺'),
+    url('~/assets/fonts/blackout/blackout_midnight-webfont.woff') format('woff'),
+    url('~/assets/fonts/blackout/blackout_midnight-webfont.ttf')
+      format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Blackout Two AM */
+@font-face {
+  font-family: 'Blackout';
+  src: url('~/assets/fonts/blackout/blackout_two_am-webfont.eot');
+  src: local('☺'),
+    url('~/assets/fonts/blackout/blackout_two_am-webfont.woff') format('woff'),
+    url('~/assets/fonts/blackout/blackout_two_am-webfont.ttf')
+      format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Ostrich Sans */
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url('~/assets/fonts/ostrich-sans/ostrich-sans-black.eot');
+  src: local('☺'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-black.woff') format('woff'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url('~/assets/fonts/ostrich-sans/ostrich-sans-bold.eot');
+  src: local('☺'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-bold.woff') format('woff'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url('~/assets/fonts/ostrich-sans/ostrich-sans-regular.eot');
+  src: local('☺'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-regular.woff') format('woff'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-regular.ttf')
+      format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url('~/assets/fonts/ostrich-sans/ostrich-sans-light.eot');
+  src: local('☺'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-light.woff') format('woff'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Ostrich Sans Dashed */
+@font-face {
+  font-family: 'Ostrich Sans Dashed';
+  src: url('~/assets/fonts/ostrich-sans/ostrich-sans-dashed.eot');
+  src: local('☺'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-dashed.woff') format('woff'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-dashed.ttf')
+      format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Ostrich Sans Rounded */
+@font-face {
+  font-family: 'Ostrich Sans Rounded';
+  src: url('~/assets/fonts/ostrich-sans/ostrich-sans-rounded.eot');
+  src: local('☺'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-rounded.woff') format('woff'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-rounded.ttf')
+      format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Ostrich Sans Inline */
+@font-face {
+  font-family: 'Ostrich Sans Inline';
+  src: url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-regular.eot');
+  src: local('☺'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-regular.woff')
+      format('woff'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-regular.ttf')
+      format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ostrich Sans Inline';
+  src: url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-italic.eot');
+  src: local('☺'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-italic.woff')
+      format('woff'),
+    url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-italic.ttf')
+      format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Fanwood */
+@font-face {
+  font-family: 'Fanwood';
+  src: url('~/assets/fonts/fanwood/fanwood-webfont.eot');
+  src: local('☺'),
+    url('~/assets/fonts/fanwood/fanwood-webfont.woff') format('woff'),
+    url('~/assets/fonts/fanwood/fanwood-webfont.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
+}
+
+/* Fanwood Italic */
+@font-face {
+  font-family: 'Fanwood';
+  src: url('~/assets/fonts/fanwood/fanwood_italic-webfont.eot');
+  src: local('☺'),
+    url('~/assets/fonts/fanwood/fanwood_italic-webfont.woff') format('woff'),
+    url('~/assets/fonts/fanwood/fanwood_italic-webfont.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
+}
+
+/* Fanwood Text */
+@font-face {
+  font-family: 'Fanwood Text';
+  src: url('~/assets/fonts/fanwood/fanwood_text-webfont.eot');
+  src: local('☺'),
+    url('~/assets/fonts/fanwood/fanwood_text-webfont.woff') format('woff'),
+    url('~/assets/fonts/fanwood/fanwood_text-webfont.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
+}
+
+/* Fanwood Text Italic */
+@font-face {
+  font-family: 'Fanwood Text';
+  src: url('~/assets/fonts/fanwood/fanwood_text_italic-webfont.eot');
+  src: local('☺'),
+    url('~/assets/fonts/fanwood/fanwood_text_italic-webfont.woff')
+      format('woff'),
+    url('~/assets/fonts/fanwood/fanwood_text_italic-webfont.ttf')
+      format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
+}
