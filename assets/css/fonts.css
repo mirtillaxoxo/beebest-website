@@ -6,7 +6,7 @@
     url('~/assets/fonts/blackout/blackout_sunrise-webfont.woff') format('woff'),
     url('~/assets/fonts/blackout/blackout_sunrise-webfont.ttf')
       format('truetype');
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -81,7 +81,7 @@
     url('~/assets/fonts/ostrich-sans/ostrich-sans-dashed.woff') format('woff'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-dashed.ttf')
       format('truetype');
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -94,7 +94,7 @@
     url('~/assets/fonts/ostrich-sans/ostrich-sans-rounded.ttf')
       format('truetype');
   font-weight: 500;
-  font-style: normal;
+  font-style: italic;
 }
 
 /* Ostrich Sans Inline */
@@ -120,7 +120,6 @@
   font-weight: normal;
   font-style: italic;
 }
-
 /* Fanwood */
 @font-face {
   font-family: 'Fanwood';
@@ -144,7 +143,6 @@
   font-style: italic;
   font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
 }
-
 /* Fanwood Text */
 @font-face {
   font-family: 'Fanwood Text';
@@ -156,7 +154,6 @@
   font-style: normal;
   font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
 }
-
 /* Fanwood Text Italic */
 @font-face {
   font-family: 'Fanwood Text';
@@ -169,4 +166,36 @@
   font-weight: 700;
   font-style: italic;
   font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
+}
+
+/* Junction */
+@font-face {
+  font-family: 'Junction';
+  src: url('~/assets/fonts/junction/junction-light.eot');
+  src: url('~/assets/fonts/junction/junction-light.eot?#iefix')
+      format('embedded-opentype'),
+    url('~/assets/fonts/junction/junction-light.woff') format('woff'),
+    url('~/assets/fonts/junction/junction-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Junction';
+  src: url('~/assets/fonts/junction/junction-regular.eot');
+  src: url('~/assets/fonts/junction/junction-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('~/assets/fonts/junction/junction-regular.woff') format('woff'),
+    url('~/assets/fonts/junction/junction-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Junction';
+  src: url('~/assets/fonts/junction/junction-bold.eot');
+  src: url('~/assets/fonts/junction/junction-bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('~/assets/fonts/junction/junction-bold.woff') format('woff'),
+    url('~/assets/fonts/junction/junction-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
