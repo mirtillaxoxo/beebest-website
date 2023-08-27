@@ -1,12 +1,20 @@
+:root {
+  --background-white: oklch(95.81% 0 0);
+  --light-grey: oklch(85.76% 0 0);
+}
+
 body {
+  @apply font-sans;
+  /* variable with fallback */
+  background-color: var(--background-white, #f1f1f1);
 }
 
 .bb-card-container {
-  @apply flex justify-center flex-wrap gap-2 p-4;
+  @apply flex justify-center flex-wrap gap-2.5 p-5;
 }
 
 .bb-card {
-  border: 1px solid black;
+  border: 1px solid var(--light-grey, #d0d0d0);
   box-shadow: var(--shadow-elevation-medium);
   @apply relative
    flex-grow
@@ -23,14 +31,15 @@ body {
 
 .bb-card::after {
   content: '';
-  background-image: linear-gradient(to bottom right, #ffcd00 0%, #fda100 100%);
+  background-image: linear-gradient(to right, #ffcd00 0%, #fda100 100%);
 
   background-image: linear-gradient(
-    to bottom right in oklab,
+    to right in oklab,
     oklch(93% 0.38 91 / 0.6) 0%,
-    oklch(77% 0.39 97 7 0.7) 100%
+    oklch(77% 0.39 97 / 0.8) 80%,
+    oklch(88% 0.35 10 / 0.8) 100%
   );
 
   @apply absolute w-full h-1
-  left-0 bottom-0;
+   left-0 bottom-0;
 }
