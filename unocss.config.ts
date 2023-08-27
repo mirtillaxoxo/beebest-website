@@ -24,7 +24,8 @@ export default defineConfig({
 
   rules: [
     ['font-display', { 'font-family': 'Blackout' }],
-    ['font-sans', { 'font-family': 'Ostrich Sans' }],
+    ['font-uppercase', { 'font-family': 'Ostrich Sans' }],
+    ['font-sans', { 'font-family': 'Junction' }],
     ['font-serif', { 'font-family': 'Fanwood Text' }],
   ],
 })
