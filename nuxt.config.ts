@@ -15,4 +15,8 @@ export default defineNuxtConfig({
   ],
 
   devtools: { enabled: true },
+
+  experimental: {
+    headNext: true, // to enable <head> tags sorting for improvement from capo.js
+  },
 })
