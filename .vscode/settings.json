@@ -1,0 +1,144 @@
+{
+  // Zen mode
+  "zenMode.fullScreen": false,
+  "zenMode.hideTabs": true,
+  "zenMode.centerLayout": false,
+
+  // Theming
+  "editor.fontLigatures": true,
+  "window.autoDetectColorScheme": true,
+  "workbench.layoutControl.type": "menu",
+  "workbench.colorTheme": "Atom One Dark",
+
+  // Scrollbars
+  "editor.hideCursorInOverviewRuler": true, // hides cursor mark in the overview ruler
+  "editor.overviewRulerBorder": false, // removes border from overview ruler (located on the right, same position as the scrollbar)
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "color-highlight.markRuler": false,
+
+  // More minimal UI
+  "workbench.activityBar.visible": false, // removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through the Command Palette
+  "workbench.statusBar.visible": false, // false removes the status bar
+  "editor.minimap.enabled": false,
+  "editor.glyphMargin": false, // removes the space used mainly for debugging indicators
+  "editor.folding": true, // if false removes the folding feature
+  "editor.lineNumbers": "off",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": false,
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.tabSizing": "shrink",
+  "breadcrumbs.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.lightbulb.enabled": false,
+  "editor.renderLineHighlight": "line",
+  "editor.renderControlCharacters": false,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+  // Theme-specific UI
+  "diffEditor.renderSideBySide": false,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.snippetSuggestions": "bottom",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.insertFinalNewline": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.renderWhitespace": "none", // removes indent guides
+  "editor.occurrencesHighlight": false, // removes highlights occurrences (still works when you select a word)
+  "workbench.editor.showIcons": false, // removes icon from opened files in tabs
+  "workbench.editor.tabCloseButton": "off", // removes cross icon from tabs
+  "workbench.colorCustomizations": {
+    // object that allows you to customize your color theme: https://code.visualstudio.com/docs/getstarted/theme-color-reference
+  },
+
+  // Search
+  "search.smartCase": true,
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    "**/vendor/*": true,
+    "**/public/*": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true
+  },
+
+  // Code
+  // Include "-" in word selection.
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.wordWrap": "on",
+  "editor.tabCompletion": "on",
+  "explorer.openEditors.visible": 1, // 0 removes the open editors section at the top of the sidebar, you can see the opened files with ⌘ + ⌥ + Tab
+
+  // Files to display
+  "files.enableTrash": false,
+  "files.exclude": {
+    ".cache-loader/": true,
+    ".gitattributes": true,
+    ".gitkeep": true,
+    ".travis.yml": true,
+    ".vercel": true,
+    ".vscode/": true,
+    "coverage": true,
+    "acf-json": true,
+    "backend/vendor": true,
+    "CODE_OF_CONDUCT.md": true,
+    "config": false,
+    "LICENSE.md": true,
+    "package-lock.json": true,
+    "phpcs.xml": true,
+
+    // For more minimal option
+    ".editorconfig": true,
+    "prettier.config.js": true,
+    "**/README.md": true,
+    "yarn.lock": true,
+    "node_modules/": true,
+    ".gitignore": true,
+    ".output/node_modules/": false,
+
+    // And even more ultra minimal
+    ".nuxt": true,
+    ".output": true,
+    "package.json": true,
+    "tsconfig.json": true
+  },
+  "window.title": "${rootName} | ${activeEditorShort} ${dirty}",
+  // "git.decorations.enabled": false,
+  // "scm.diffDecorationsGutterVisibility": "hover",
+  // "scm.diffDecorations": "none",
+  "files.watcherExclude": {
+    "**/.output/**": true,
+    "**/.yarn/**": true,
+    "**/node_modules/**": true,
+    "backend/vendor/**": true
+  },
+  "editor.semanticHighlighting.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+
+  // Suggestions
+  "editor.inlineSuggest.enabled": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.suggest.showWords": false,
+  "emmet.showAbbreviationSuggestions": false,
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.suggest.completeFunctionCalls": true,
+  "editor.guides.indentation": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.invisibleCharacters": false
+}
