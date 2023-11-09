@@ -4,9 +4,12 @@ const modalDialog: Ref<HTMLDialogElement | undefined> = ref()
 
 <template>
   <div>
-    <LayoutTheHeader :modal-dialog="modalDialog" />
+    <DevOnly>
+      <DevMediaSize />
+    </DevOnly>
 
-    <main>
+    <LayoutTheHeader :modal-dialog="modalDialog" />
+    <main class="flex flex-col items-center lg-max-w-3/5 mx-auto">
       <slot />
     </main>
 
