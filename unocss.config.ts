@@ -19,13 +19,16 @@ export default defineConfig({
   ],
 
   theme: {
-    colors: {},
+    colors: {
+      bb: { honey: '#fda100' },
+    },
   },
 
   rules: [
+    ['font-serif', { 'font-family': 'Cormorant Garamond' }],
+    ['font-sans', { 'font-family': 'Geist' }],
+    ['font-body', { 'font-family': 'Vollkorn' }],
+    ['font-outline', { 'font-family': 'Ostrich Sans' }],
     ['font-display', { 'font-family': 'Blackout' }],
-    ['font-uppercase', { 'font-family': 'Ostrich Sans' }],
-    ['font-sans', { 'font-family': 'Junction' }],
-    ['font-serif', { 'font-family': 'Fanwood Text' }],
   ],
 })

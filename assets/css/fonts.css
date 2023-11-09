@@ -1,32 +1,239 @@
+/* Cormorant Garamond */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('~/assets/fonts/cormorant-garamond/CormorantGaramond-Light.ttf')
+    format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('~/assets/fonts/cormorant-garamond/CormorantGaramond-LightItalic.ttf')
+    format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('~/assets/fonts/cormorant-garamond/CormorantGaramond-Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('~/assets/fonts/cormorant-garamond/CormorantGaramond-Italic.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('~/assets/fonts/cormorant-garamond/CormorantGaramond-Medium.ttf')
+    format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('~/assets/fonts/cormorant-garamond/CormorantGaramond-MediumItalic.ttf')
+    format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('~/assets/fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf')
+    format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('~/assets/fonts/cormorant-garamond/CormorantGaramond-SemiBoldItalic.ttf')
+    format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('~/assets/fonts/cormorant-garamond/CormorantGaramond-Bold.ttf')
+    format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('~/assets/fonts/cormorant-garamond/CormorantGaramond-BoldItalic.ttf')
+    format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Geist */
+@font-face {
+  font-family: 'Geist';
+  src: url('~/assets/fonts/geist/Geist-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('~/assets/fonts/geist/Geist-UltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('~/assets/fonts/geist/Geist-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('~/assets/fonts/geist/Geist-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('~/assets/fonts/geist/Geist-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('~/assets/fonts/geist/Geist-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('~/assets/fonts/geist/Geist-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('~/assets/fonts/geist/Geist-Black.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('~/assets/fonts/geist/Geist-UltraBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Vollkorn */
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-MediumItalic.ttf')
+    format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-SemiBoldItalic.ttf')
+    format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-ExtraBoldItalic.ttf')
+    format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('~/assets/fonts/vollkorn/Vollkorn-BlackItalic.ttf')
+    format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
 /* Blackout Sunrise */
 @font-face {
   font-family: 'Blackout';
   src: url('~/assets/fonts/blackout/blackout_sunrise-webfont.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/blackout/blackout_sunrise-webfont.woff') format('woff'),
     url('~/assets/fonts/blackout/blackout_sunrise-webfont.ttf')
       format('truetype');
   font-weight: 400;
   font-style: normal;
 }
-
 /* Blackout Midnight */
 @font-face {
   font-family: 'Blackout';
   src: url('~/assets/fonts/blackout/blackout_midnight-webfont.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/blackout/blackout_midnight-webfont.woff') format('woff'),
     url('~/assets/fonts/blackout/blackout_midnight-webfont.ttf')
       format('truetype');
   font-weight: 700;
   font-style: normal;
 }
-
 /* Blackout Two AM */
 @font-face {
   font-family: 'Blackout';
   src: url('~/assets/fonts/blackout/blackout_two_am-webfont.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/blackout/blackout_two_am-webfont.woff') format('woff'),
     url('~/assets/fonts/blackout/blackout_two_am-webfont.ttf')
       format('truetype');
@@ -38,7 +245,8 @@
 @font-face {
   font-family: 'Ostrich Sans';
   src: url('~/assets/fonts/ostrich-sans/ostrich-sans-black.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-black.woff') format('woff'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-black.ttf') format('truetype');
   font-weight: 900;
@@ -47,7 +255,8 @@
 @font-face {
   font-family: 'Ostrich Sans';
   src: url('~/assets/fonts/ostrich-sans/ostrich-sans-bold.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-bold.woff') format('woff'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-bold.ttf') format('truetype');
   font-weight: 700;
@@ -56,7 +265,8 @@
 @font-face {
   font-family: 'Ostrich Sans';
   src: url('~/assets/fonts/ostrich-sans/ostrich-sans-regular.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-regular.woff') format('woff'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-regular.ttf')
       format('truetype');
@@ -66,7 +276,8 @@
 @font-face {
   font-family: 'Ostrich Sans';
   src: url('~/assets/fonts/ostrich-sans/ostrich-sans-light.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-light.woff') format('woff'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-light.ttf') format('truetype');
   font-weight: 300;
@@ -77,31 +288,32 @@
 @font-face {
   font-family: 'Ostrich Sans Dashed';
   src: url('~/assets/fonts/ostrich-sans/ostrich-sans-dashed.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-dashed.woff') format('woff'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-dashed.ttf')
       format('truetype');
   font-weight: 400;
   font-style: normal;
 }
-
 /* Ostrich Sans Rounded */
 @font-face {
   font-family: 'Ostrich Sans Rounded';
   src: url('~/assets/fonts/ostrich-sans/ostrich-sans-rounded.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-rounded.woff') format('woff'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-rounded.ttf')
       format('truetype');
   font-weight: 500;
   font-style: italic;
 }
-
 /* Ostrich Sans Inline */
 @font-face {
   font-family: 'Ostrich Sans Inline';
   src: url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-regular.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-regular.woff')
       format('woff'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-regular.ttf')
@@ -112,90 +324,12 @@
 @font-face {
   font-family: 'Ostrich Sans Inline';
   src: url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-italic.eot');
-  src: local('☺'),
+  src:
+    local('☺'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-italic.woff')
       format('woff'),
     url('~/assets/fonts/ostrich-sans/ostrich-sans-inline-italic.ttf')
       format('truetype');
   font-weight: normal;
   font-style: italic;
-}
-/* Fanwood */
-@font-face {
-  font-family: 'Fanwood';
-  src: url('~/assets/fonts/fanwood/fanwood-webfont.eot');
-  src: local('☺'),
-    url('~/assets/fonts/fanwood/fanwood-webfont.woff') format('woff'),
-    url('~/assets/fonts/fanwood/fanwood-webfont.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
-}
-
-/* Fanwood Italic */
-@font-face {
-  font-family: 'Fanwood';
-  src: url('~/assets/fonts/fanwood/fanwood_italic-webfont.eot');
-  src: local('☺'),
-    url('~/assets/fonts/fanwood/fanwood_italic-webfont.woff') format('woff'),
-    url('~/assets/fonts/fanwood/fanwood_italic-webfont.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-  font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
-}
-/* Fanwood Text */
-@font-face {
-  font-family: 'Fanwood Text';
-  src: url('~/assets/fonts/fanwood/fanwood_text-webfont.eot');
-  src: local('☺'),
-    url('~/assets/fonts/fanwood/fanwood_text-webfont.woff') format('woff'),
-    url('~/assets/fonts/fanwood/fanwood_text-webfont.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
-}
-/* Fanwood Text Italic */
-@font-face {
-  font-family: 'Fanwood Text';
-  src: url('~/assets/fonts/fanwood/fanwood_text_italic-webfont.eot');
-  src: local('☺'),
-    url('~/assets/fonts/fanwood/fanwood_text_italic-webfont.woff')
-      format('woff'),
-    url('~/assets/fonts/fanwood/fanwood_text_italic-webfont.ttf')
-      format('truetype');
-  font-weight: 700;
-  font-style: italic;
-  font-feature-settings: 'kern', 'liga', 'clig', 'lnum';
-}
-
-/* Junction */
-@font-face {
-  font-family: 'Junction';
-  src: url('~/assets/fonts/junction/junction-light.eot');
-  src: url('~/assets/fonts/junction/junction-light.eot?#iefix')
-      format('embedded-opentype'),
-    url('~/assets/fonts/junction/junction-light.woff') format('woff'),
-    url('~/assets/fonts/junction/junction-light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Junction';
-  src: url('~/assets/fonts/junction/junction-regular.eot');
-  src: url('~/assets/fonts/junction/junction-regular.eot?#iefix')
-      format('embedded-opentype'),
-    url('~/assets/fonts/junction/junction-regular.woff') format('woff'),
-    url('~/assets/fonts/junction/junction-regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Junction';
-  src: url('~/assets/fonts/junction/junction-bold.eot');
-  src: url('~/assets/fonts/junction/junction-bold.eot?#iefix')
-      format('embedded-opentype'),
-    url('~/assets/fonts/junction/junction-bold.woff') format('woff'),
-    url('~/assets/fonts/junction/junction-bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
 }
