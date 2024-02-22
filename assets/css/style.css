@@ -42,12 +42,33 @@ body::-webkit-scrollbar {
 
 /* Variables */
 :root {
+  /* #f1f1f1 */
   --background-white: oklch(95.81% 0 0);
+
+  /* #d0d0d0 */
   --light-grey: oklch(85.76% 0 0);
+
+  /* 18% CIECAM02 lightness hexa #989898ec */
+  --middle-grey: oklch(67.97% 0 0 / 92.55%);
+
+  /* #222222 */
+  --dark-grey: oklch(25.2% 0 0);
 }
 
 body {
   @apply font-body;
+
+  color: var(--dark-grey, #222222);
   /* variable with fallback */
   background-color: var(--background-white, #f1f1f1);
+}
+
+.action-button {
+  @apply inline-block my-4
+  font-mono font-bold text-white uppercase text-sm
+  bg-bb-honey px-2 py-1
+  border rounded-lt rounded-rb;
+
+  border-color: var(--background-white, #f1f1f1);
+  box-shadow: var(--shadow-elevation-low);
 }
