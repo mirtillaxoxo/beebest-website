@@ -47,7 +47,7 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.highlightModifiedTabs": true,
   "editor.renderWhitespace": "none", // removes indent guides
-  "editor.occurrencesHighlight": false, // removes highlights occurrences (still works when you select a word)
+  "editor.occurrencesHighlight": "off", // removes highlights occurrences (still works when you select a word)
   "workbench.editor.showIcons": false, // removes icon from opened files in tabs
   "workbench.editor.tabCloseButton": "off", // removes cross icon from tabs
   "workbench.colorCustomizations": {
@@ -138,5 +138,6 @@
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.invisibleCharacters": false,
   "workbench.activityBar.location": "hidden",
-  "zenMode.showTabs": "single"
+  "zenMode.showTabs": "single",
+  "workbench.editor.tabActionCloseVisibility": false
 }
