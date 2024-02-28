@@ -9,7 +9,8 @@ const modalDialog: Ref<HTMLDialogElement | undefined> = ref()
     </DevOnly>
 
     <LayoutTheHeader :modal-dialog="modalDialog" />
-    <main class="flex flex-col items-center lg-max-w-3/5 mx-auto">
+
+    <main class="mt-8 flex flex-col items-center lg-max-w-3/5 mx-auto">
       <slot />
     </main>
 
@@ -19,7 +20,7 @@ const modalDialog: Ref<HTMLDialogElement | undefined> = ref()
       </dialog>
     </aside>
 
-    <footer>footer</footer>
+    <LayoutTheFooter />
   </div>
 </template>
 

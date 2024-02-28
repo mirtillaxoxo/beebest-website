@@ -10,17 +10,7 @@ const props = withDefaults(defineProps<Props>(), {
 <template>
   <div class="flex flex-col items-center justify-center h-full">
     <nav>
-      <ul class="flex flex-col gap-18 text-5xl font-serif">
-        <li>
-          <NuxtLink to="/" @click="modalDialog?.close()">Home</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/" @click="modalDialog?.close()">Work</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/" @click="modalDialog?.close()">About</NuxtLink>
-        </li>
-      </ul>
+      <LayoutPagesList :modal-dialog="modalDialog" class="modal-page-list" />
     </nav>
 
     <button
@@ -32,3 +22,18 @@ const props = withDefaults(defineProps<Props>(), {
     </button>
   </div>
 </template>
+
+<style scoped>
+.modal-page-list {
+  @apply flex flex-col flex-wrap justify-between gap-8
+    text-5xl font-serif;
+}
+
+.modal-page-list :deep(.router-link-active::before) {
+  @apply absolute  -left-8 bottom-0
+  text-bb-honey text-6xl;
+
+  content: '>';
+  text-shadow: var(--shadow-elevation-medium);
+}
+</style>

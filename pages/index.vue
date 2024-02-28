@@ -1,8 +1,7 @@
 <template>
   <article>
-    <HomeTheHero />
-    <LayoutCardContainer>
-      <LayoutCardArticle
+    <!--   <LayoutCardContainer>
+     <LayoutCardArticle
         tag="@work"
         class="w-full sm:w-64 min-h-108 sm:h-108 overflow-hidden grow-0"
       >
@@ -13,7 +12,7 @@
           playsinline
           class="absolute -z-10 -mx-4 bottom-0"
         >
-          <source src="video/bee-pollination.mp4" type="video/mp4" />
+          <source src="/video/bee-pollination.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -50,6 +49,6 @@
           <strong>aesthetics</strong> and <strong>functional</strong> content.
         </p>
       </LayoutCardArticle>
-    </LayoutCardContainer>
+    </LayoutCardContainer> -->
   </article>
 </template>

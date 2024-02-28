@@ -19,10 +19,14 @@ const props = withDefaults(defineProps<Props>(), {
         </h1>
       </NuxtLink>
 
+      <nav class="hidden md:block">
+        <LayoutPagesList class="header-pages-list" />
+      </nav>
+
       <button
         type="button"
         @click="modalDialog?.showModal()"
-        class="px-10 py-4 border-l uppercase font-semibold"
+        class="md:hidden px-10 py-4 border-l uppercase font-semibold"
         style="
           border-color: var(--light-grey, #d0d0d0);
           color: var(--light-grey, #d0d0d0);
@@ -34,7 +38,7 @@ const props = withDefaults(defineProps<Props>(), {
 
     <figure class="absolute w-full flex justify-center h-7 top-12.8 left-0">
       <img
-        src="~/assets/graphics/bee-best_bee-glyph.svg"
+        src="~/assets/graphics/logos/bee-best_bee-glyph.svg"
         alt="Bee Best Bee Glyph"
         class="h-full px-1 bg-white"
         style="background-color: var(--background-white, #f1f1f1)"
@@ -45,3 +49,14 @@ const props = withDefaults(defineProps<Props>(), {
     </p>
   </header>
 </template>
+
+<style scoped>
+.header-pages-list {
+  @apply py-4 flex gap-8;
+}
+.header-pages-list :deep(.router-link-active) {
+  @apply underline decoration-bb-honey;
+
+  text-shadow: var(--shadow-elevation-low);
+}
+</style>
