@@ -1,4 +1,6 @@
 import { cssFiles } from './.config/websiteConfig'
+import { faviconLinks, appColorsMeta } from './.config/websiteHead'
+
 // import { iubendaScripts } from './.config/privacyPolicy'
 import { useWebsiteInfo } from './composables/useWebsiteInfo'
 
@@ -16,6 +18,8 @@ export default defineNuxtConfig({
 
     '@nuxtjs/html-validator',
     'nuxt-typed-router',
+
+    '@hypernym/nuxt-gsap',
   ],
 
   css: [...cssFiles], // from /.config/websiteConfig
@@ -24,13 +28,13 @@ export default defineNuxtConfig({
     head: {
       title: 'BeeBest',
       htmlAttrs: {
-        // lang: 'it-IT',
+        lang: 'en',
       },
-      link: [],
-      meta: [],
+
+      link: [...(faviconLinks as [])],
+      meta: [...(appColorsMeta as [])],
       script: [],
-      // link: [...headLink],
-      // meta: [...headMeta],
+
       // script: [
       //   ...(process.env.NODE_ENV !== 'development'
       //     ? (iubendaScripts as [])
@@ -48,7 +52,6 @@ export default defineNuxtConfig({
   /*
     DEV
   */
-
   devtools: { enabled: true },
 
   experimental: {
@@ -86,5 +89,9 @@ export default defineNuxtConfig({
     url: websiteUrl,
     name: websiteName,
     description: websiteDescription,
+    defautLocale: 'en',
   },
+
+  // GSAP
+  gsap: { composables: false, extraPlugins: { motionPath: true } },
 })
