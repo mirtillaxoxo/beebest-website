@@ -5,7 +5,9 @@ const modalDialog: Ref<HTMLDialogElement | undefined> = ref()
 <template>
   <div>
     <DevOnly>
-      <DevMediaSize />
+      <ClientOnly>
+        <DevMediaSize />
+      </ClientOnly>
     </DevOnly>
 
     <LayoutTheHeader :modal-dialog="modalDialog" />
@@ -20,7 +22,7 @@ const modalDialog: Ref<HTMLDialogElement | undefined> = ref()
       </dialog>
     </aside>
 
-    <LayoutTheFooter />
+    <LayoutTheFooter :modal-dialog="modalDialog" />
   </div>
 </template>
 

@@ -1,4 +1,11 @@
 <script setup lang="ts">
+interface Props {
+  modalDialog: HTMLDialogElement
+}
+const props = withDefaults(defineProps<Props>(), {
+  modalDialog: undefined,
+})
+
 const {
   beeBest: { websiteName, socialProfiles },
 } = useWebsiteInfo()
@@ -39,7 +46,11 @@ const { locale } = useI18n()
             >pages</span
           >
           <nav>
-            <LayoutPagesList :show-icon="true" class="footer-pages-list" />
+            <LayoutPagesList
+              :modal-dialog="modalDialog"
+              :show-icon="true"
+              class="footer-pages-list"
+            />
           </nav>
         </div>
       </div>
@@ -88,7 +99,9 @@ const { locale } = useI18n()
           - All rights reserved</span
         >
 
-        <span class="-mt-1 inline-flex text-2xl i-bee-best-bee-glyph"></span>
+        <span
+          class="-mt-1 inline-flex text-2xl i-bee-best-bee-glyph-fill text-bb-honey"
+        ></span>
       </p>
     </div>
   </footer>

@@ -20,7 +20,10 @@ const props = withDefaults(defineProps<Props>(), {
       </NuxtLink>
 
       <nav class="hidden md:block">
-        <LayoutPagesList class="header-pages-list" />
+        <LayoutPagesList
+          :modal-dialog="modalDialog"
+          class="header-pages-list"
+        />
       </nav>
 
       <button
@@ -38,7 +41,7 @@ const props = withDefaults(defineProps<Props>(), {
 
     <figure class="absolute w-full flex justify-center h-7 top-12.8 left-0">
       <img
-        src="~/assets/graphics/logos/bee-best_bee-glyph.svg"
+        src="~/assets/graphics/logos/beebest_bee-glyph.svg"
         alt="Bee Best Bee Glyph"
         class="h-full px-1 bg-white"
         style="background-color: var(--background-white, #f1f1f1)"

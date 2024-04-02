@@ -16,6 +16,5 @@ const activeBreakpoint = computed(() => {
     class="fixed right-2 top-2 z-100 text-xs text-blue-600 border border-blue-400 px-1"
   >
     <pre>{{ activeBreakpoint.toUpperCase() }}: {{ width }}px</pre>
-    <pre></pre>
   </div>
 </template>
