@@ -18,10 +18,7 @@ const pages = usePages()
       :key="page.name.toLowerCase().replaceAll(' ', '-')"
       class="relative flex items gap-1"
     >
-      <span
-        v-if="showIcon"
-        class="i-ph:arrow-down-right inline-flex text-bb-honey"
-      ></span>
+      <span v-if="showIcon" class="i-ph:arrow-down-right text-bb-honey"></span>
       <NuxtLink
         :to="page.url"
         @click="modalDialog?.close()"

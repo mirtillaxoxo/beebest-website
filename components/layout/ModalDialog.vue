@@ -8,15 +8,15 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center h-full">
-    <nav>
+  <div class="flex flex-col items-center justify-center h-full font-mono">
+    <nav aria-label="mobile-menu-navigation">
       <LayoutPagesList :modal-dialog="modalDialog" class="modal-page-list" />
     </nav>
 
     <button
       type="button"
       @click="modalDialog?.close()"
-      class="absolute right-10.5 top-4.5 font-uppercase font-black"
+      class="absolute right-7.5 top-3 font-uppercase font-black"
     >
       close
     </button>
@@ -26,11 +26,11 @@ const props = withDefaults(defineProps<Props>(), {
 <style scoped>
 .modal-page-list {
   @apply flex flex-col flex-wrap justify-between gap-8
-    text-5xl font-serif;
+    text-5xl;
 }
 
 .modal-page-list :deep(.router-link-active::before) {
-  @apply absolute  -left-8 bottom-0
+  @apply absolute -left-10 bottom-0
   text-bb-honey text-6xl;
 
   content: '>';

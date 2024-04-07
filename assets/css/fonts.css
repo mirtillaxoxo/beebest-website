@@ -127,7 +127,7 @@
 }
 
 /* Vollkorn */
-@font-face {
+/* @font-face {
   font-family: 'Vollkorn';
   src: url('~/assets/fonts/vollkorn/Vollkorn-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -202,7 +202,7 @@
     format('truetype');
   font-weight: 900;
   font-style: italic;
-}
+} */
 
 /* Blackout Sunrise */
 @font-face {
