@@ -1,98 +1,147 @@
 <template>
-  <LayoutThePage>
+  <article class="flex flex-col gap-10">
     <!-- Bee Animation -->
-    <section class="page-section-margins">
-      <GraphicsBeeAnimation class="-m-5 -mt-10" />
+    <section>
+      <GraphicsBeeAnimation class="-mt-5 -mb-18 max-w-164 mx-auto" />
     </section>
 
-    <section class="-mt-15 text-xl page-section-margins">
-      <p>
-        <span class="font-bold text-3xl">We are like bees,</span> <br />
-        known and appreciated <br />
-        for being tireless workers <br />
-        and precise designers.
-      </p>
+    <section>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 font-mono">
+        <p class="uppercase">Consultancy + Agency</p>
 
-      <div class="flex justify-center py-3">
-        <span
-          class="i-bee-best-bee-glyph-fill text-bb-honey inline-block text-3xl"
-        ></span>
+        <ul class="what-we-do-shortlist">
+          <li>
+            <span class="i-arcticons-vr-media-player"></span>
+            <span>Digital Projects</span>
+          </li>
+          <li>
+            <span class="i-arcticons-emoji-movie-camera"></span>
+            <span> Media Production </span>
+          </li>
+          <li>
+            <span class="i-arcticons-at-voice"></span>
+            <span>Events & Press</span>
+          </li>
+        </ul>
+
+        <div>
+          <p class="flex items-center gap-1">
+            <span> We are like bees</span>
+            <span class="i-bee-best-bee-glyph-fill text-bb-honey"></span>,
+          </p>
+          <p>
+            known and appreciated for being tireless workers and precise
+            designers.
+          </p>
+
+          <p>
+            We create projects<br />
+            with passion and commitment, with great attention to aesthetic and
+            functional content.
+          </p>
+        </div>
       </div>
-
-      <p class="text-right">
-        <span class="font-bold text-3xl">We create projects</span> <br />
-        with passion and commitment,<br />
-        with great attention to aesthetic <br />
-        and functional content.
-      </p>
     </section>
 
-    <LayoutPageSection section-title="What we love">
-      <div class="mt-8 md:mx-10 flex flex-wrap justify-center gap-10">
-        <figure
-          class="category-figure color-middle-gray md:w-[55%]! lg:w-[45%]!"
-        >
-          <NuxtImg
-            src="images/categories/adv_horm-2022_01.jpg"
-            alt="Design Category Image"
-          />
-          <figcaption>
-            <h3>design & tech</h3>
-          </figcaption>
-        </figure>
+    <section>
+      <h2 class="flex items-center gap-2.5">
+        <span class="i-arcticons-hearth text-xl"></span>
 
-        <figure class="category-figure color-middle-gray w-[80%] md:w-[30%]!">
-          <NuxtImg
-            src="images/categories/adv_marina-babini-2001_01.jpg"
-            alt="Design Category Image"
-          />
-          <figcaption>
-            <h3>fashion</h3>
-          </figcaption>
+        <span class="uppercase">What we love: </span>
+      </h2>
+      <ul class="what-we-love-container">
+        <li>
+          <figure>
+            <div>
+              <NuxtImg
+                src="/images/categories/adv_horm-2022_01.jpg"
+                alt="Design"
+              />
+            </div>
+            <figcaption>Design</figcaption>
+          </figure>
+        </li>
+        <figure>
+          <div>
+            <NuxtImg
+              src="/images/categories/adv_marina-babini-2001_01.jpg"
+              alt="Fashion"
+            />
+          </div>
+          <figcaption>Fashion</figcaption>
         </figure>
+        <li>
+          <figure>
+            <div>
+              <NuxtImg
+                src="/images/categories/projects_chocolove-2023_01.jpg"
+                alt="Food"
+              />
+            </div>
+            <figcaption>Food</figcaption>
+          </figure>
+        </li>
 
-        <figure class="category-figure color-middle-gray md:-mt-10">
-          <NuxtImg
-            src="images/categories/projects_chocolove-2023_01.jpg"
-            alt="Design Category Image"
-          />
-          <figcaption>
-            <h3>food</h3>
-          </figcaption>
-        </figure>
+        <li class="md:hidden">
+          <div class="">
+            <div class="pb-[100%] relative">
+              <div
+                class="w-full h-full absolute top-0 flex justify-center items-center"
+              >
+                <span
+                  class="i-bee-best-bee-glyph text-[9rem] text-bb-honey"
+                ></span>
+              </div>
+            </div>
+
+            <p>..Bees!</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <div class="flex justify-center">
+        <div class="relative">
+          <NuxtLink to="/services" class="action-button"
+            >Discover what we do</NuxtLink
+          >
+          <span
+            class="absolute i-arcticons-auto-clicker text-2xl top-9 animate-bounce left-[45%]"
+          ></span>
+        </div>
       </div>
-    </LayoutPageSection>
-
-    <LayoutPageSection section-title="What we do"></LayoutPageSection>
-
-    <LayoutPageSection section-title="Who we are"></LayoutPageSection>
-  </LayoutThePage>
+    </section>
+  </article>
 </template>
 
 <style scoped>
-.category-figure {
-  @apply md:w-[45%] lg:w-[30%];
+.what-we-do-shortlist li {
+  @apply flex items-center gap-2.5;
 }
-.category-figure :deep(img) {
-  @apply w-full md:shadow-xl;
+.what-we-do-shortlist li > span:first-child {
+  @apply text-xl;
 }
-.category-figure figcaption {
-  @apply flex justify-end;
 
-  /* background: linear-gradient(70deg, #f1f1f1 50%, #fda100 90%);
-  background: linear-gradient(
-    70deg in oklch,
-    oklch(95.81% 0 0) 60%,
-    oklch(78.33% 0.17 69.28) 90%
-  ); */
+.what-we-love-container {
+  @apply mt-5 -mx-2.5 md:mx-0
+  grid grid-cols-2 gap-2.5
+  md:grid md:grid-cols-3 md:gap-5
+  -mb-2.5;
 }
-.category-figure figcaption h3 {
-  @apply px-5 pt-1 -mt-2 mr-2
-  text-3xl font-bold text-white;
+.what-we-love-container li {
+  @apply mb-2.5;
+}
 
-  background-color: #fda100;
-  background-color: oklch(78.33% 0.17 69.28);
+.what-we-love-container figure > div {
+  @apply relative pb-[100%];
 
-  text-shadow: var(--shadow-elevation-medium);
+  box-shadow: var(--shadow-elevation-low);
+}
+
+.what-we-love-container img {
+  @apply absolute w-full h-full object-cover;
+}
+.what-we-love-container figcaption {
+  @apply mt-1;
 }
 </style>
