@@ -12,6 +12,10 @@ const {
 export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
+
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/fontaine',
+
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@vueuse/nuxt',
@@ -23,6 +27,19 @@ export default defineNuxtConfig({
   ],
 
   css: [...cssFiles], // from /.config/websiteConfig
+
+  postcss: {
+    plugins: { '@csstools/postcss-oklab-function': { preserve: true } },
+  },
+
+  googleFonts: {
+    families: {
+      Vollkorn: true,
+      'DM Sans': true,
+      Figtree: true,
+      'IBM Plex Mono': true,
+    },
+  },
 
   app: {
     head: {
@@ -70,10 +87,11 @@ export default defineNuxtConfig({
     langDir: 'locales',
     locales: [
       { code: 'en', file: 'en-US.ts' },
-      { code: 'it', file: 'it-IT.ts' },
+      // { code: 'it', file: 'it-IT.ts' },
     ],
     defaultLocale: 'en',
-    //  experimental: { jsTsFormatResource: true }, // to enable .ts locales file
+
+    experimental: { jsTsFormatResource: true }, // to enable .ts locales file
   },
 
   // NuxtImage
