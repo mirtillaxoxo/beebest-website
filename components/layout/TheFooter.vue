@@ -15,14 +15,10 @@ const { locale } = useI18n()
 
 <template>
   <footer class="p-5 flex flex-col">
-    <div
-      class="border-y flex flex-wrap justify-between"
-      style="border-color: var(--light-grey, #d0d0d0)"
-    >
+    <div class="flex flex-wrap justify-between border-y border-bb-lightgrey">
       <div class="flex">
         <div
-          class="border-r pr-2.5 pt-1"
-          style="border-color: var(--light-grey, #d0d0d0)"
+          class="pr-2.5 pt-1 border-r border-bb-lightgrey font-serif font-bold"
         >
           <p>{{ websiteName }}</p>
           <p class="text-xs -mt-1.5 text-bb-honey">Consultancy</p>
@@ -30,22 +26,24 @@ const { locale } = useI18n()
 
         <InfoStudioAddress class="footer-address" />
       </div>
-      <nav class="flex flex-wrap items-center gap-4">
-        <NuxtLink to="/contacts" class="action-button">Contact Us</NuxtLink>
+      <nav
+        aria-label="footer-call-to-actions-navigation"
+        class="flex flex-wrap items-center gap-4"
+      >
+        <NuxtLink to="/contacts" class="action-button-fill"
+          >Contact Us</NuxtLink
+        >
       </nav>
     </div>
 
-    <div
-      class="border-b flex justify-between items-center"
-      style="border-color: var(--light-grey, #d0d0d0)"
-    >
+    <div class="flex justify-between items-center border-b border-bb-lightgrey">
       <div>
         <div class="flex items-center justify-center">
           <span
-            class="text-bb-honey pb-1 md:pb-0 -ml-3 md:ml-0 md:mr-2 -mr-2 rotate-270 md:rotate-0 font-mono text-xs"
+            class="text-bb-honey pb-1 md:pb-0 -ml-3 md:ml-0 md:mr-2 -mr-2 rotate-270 md:rotate-0 font-mono text-xs uppercase"
             >pages</span
           >
-          <nav>
+          <nav aria-label="footer-page-navigation">
             <LayoutPagesList
               :modal-dialog="modalDialog"
               :show-icon="true"
@@ -57,16 +55,15 @@ const { locale } = useI18n()
 
       <div class="flex items-center gap-2">
         <div
-          class="border-r flex items-center justify-center"
-          style="border-color: var(--light-grey, #d0d0d0)"
+          class="flex items-center justify-center border-r border-bb-lightgrey"
         >
           <span
-            class="text-bb-honey pb-1 md:pb-0 -mr-2 md:mr-2 rotate-270 md:rotate-0 font-mono text-xs"
+            class="text-bb-honey pb-1 md:pb-0 -mr-2 md:mr-2 rotate-270 md:rotate-0 font-mono text-xs uppercase"
             >social</span
           >
         </div>
 
-        <nav>
+        <nav aria-label="footer-social-navigation">
           <LayoutSocialIcon
             v-for="social in socialProfiles"
             :social="social"
@@ -77,8 +74,8 @@ const { locale } = useI18n()
     </div>
 
     <nav
-      class="border-b flex flex-wrap gap-8 py-1 font-mono text-sm"
-      style="border-color: var(--light-grey, #d0d0d0)"
+      aria-label="footer-privacy-navigation"
+      class="flex flex-wrap gap-8 py-1 font-mono text-sm border-b border-bb-lightgrey"
     >
       <a href="https://www.iubenda.com/privacy-policy/95903843"
         >Privacy Policy</a
@@ -90,8 +87,7 @@ const { locale } = useI18n()
 
     <div class="flex justify-center md:justify-end">
       <p
-        class="text-sm my-2 flex items-center gap-2"
-        style="color: var(--middle-gray, #989898ec)"
+        class="text-xs font-sans text-bb-middlegrey my-2 flex items-center gap-2"
       >
         <span>
           Copyright {{ websiteName }}
@@ -100,7 +96,7 @@ const { locale } = useI18n()
         >
 
         <span
-          class="-mt-1 inline-flex text-2xl i-bee-best-bee-glyph-fill text-bb-honey"
+          class="-mt-1 text-2xl i-bee-best-bee-glyph-fill text-bb-honey"
         ></span>
       </p>
     </div>
@@ -113,9 +109,8 @@ const { locale } = useI18n()
     text-xs font-mono;
 }
 .footer-address :deep(p:last-of-type) {
-  @apply font-sans;
+  @apply font-sans text-bb-middlegrey;
 
-  color: var(--middle-grey, #989898ec);
   text-shadow: var(--shadow-elevation-low);
 }
 
@@ -125,7 +120,7 @@ const { locale } = useI18n()
 
 .footer-pages-list {
   @apply mt-1 grid grid-cols-2 md:grid-cols-4
-    text-base;
+    text-sm font-mono;
 }
 .footer-pages-list :deep(li) {
   @apply relative mr-4;

@@ -40,47 +40,25 @@ body::-webkit-scrollbar {
   CUSTOM STYLES
 */
 
-/* Variables */
-:root {
-  /* #f1f1f1 */
-  --background-white: oklch(95.81% 0 0);
-
-  /* #d0d0d0 */
-  --light-grey: oklch(85.76% 0 0);
-
-  /* 18% CIECAM02 lightness hexa #989898ec */
-  --middle-grey: oklch(67.97% 0 0 / 92.55%);
-
-  /* #222222 */
-  --dark-grey: oklch(25.2% 0 0);
-
-  /* #fda100 */
-  --honey: oklch(78.33% 0.17 69.28);
-}
-
 body {
-  @apply font-body;
-
-  color: var(--dark-grey, #222222);
-  /* variable with fallback */
-  background-color: var(--background-white, #f1f1f1);
-}
-
-.page-section-margins {
-  @apply md:max-w-128 lg:max-w-164
-  p-5;
+  @apply font-mono
+  bg-bb-backgroundwhite
+  text-bb-outerspace;
 }
 
 .action-button {
-  @apply inline-block my-4
-  font-mono font-bold text-white uppercase text-sm
-  bg-bb-honey px-2 py-1
-  border rounded-lt rounded-rb;
+  @apply border border-bb-outerspace
+  px-5 py-2.5
+  bg-bb-backgroundultrawhite;
 
-  border-color: var(--background-white, #f1f1f1);
   box-shadow: var(--shadow-elevation-low);
 }
 
-.color-middle-gray {
-  color: var(--middle-gray, #989898ec);
+.action-button-fill {
+  @apply inline-block
+  font-mono font-bold text-bb-backgroundultrawhite text-sm
+  bg-bb-honey px-2 py-1
+  border border-bb-backgroundwhite;
+
+  box-shadow: var(--shadow-elevation-low);
 }

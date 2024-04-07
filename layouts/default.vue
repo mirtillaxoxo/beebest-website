@@ -12,17 +12,19 @@ const modalDialog: Ref<HTMLDialogElement | undefined> = ref()
 
     <LayoutTheHeader :modal-dialog="modalDialog" />
 
-    <main class="mt-8 flex flex-col items-center lg-max-w-3/5 mx-auto">
+    <main class="p-5">
       <slot />
     </main>
 
-    <aside>
+    <aside aria-label="mobile-menu">
       <dialog ref="modalDialog" class="relative p-0 w-full h-full">
-        <LayoutModalDialog :modal-dialog="modalDialog" />
+        <LazyLayoutModalDialog :modal-dialog="modalDialog" />
       </dialog>
     </aside>
 
-    <LayoutTheFooter :modal-dialog="modalDialog" />
+    <LazyLayoutTheFooter :modal-dialog="modalDialog" />
+
+    <LazyLayoutUtilitiesClass />
   </div>
 </template>
 

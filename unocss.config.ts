@@ -1,7 +1,5 @@
 import { readFile } from 'fs/promises'
 
-import { useThemeColors } from './composables/useThemeColors'
-
 import {
   defineConfig,
   presetUno,
@@ -9,14 +7,17 @@ import {
   transformerDirectives,
 } from 'unocss'
 
+import Color from 'colorjs.io'
+import { useThemeColors } from './composables/useThemeColors'
+
 // add icon here to load dynamic icon
 import { icons } from './composables/useIcons'
 
-// Theme colors (hex values for unocss)
-const themeColors = useThemeColors()
-const themeColorsHex: { [string: string]: string } = {}
-for (const [key, value] of Object.entries(themeColors)) {
-  themeColorsHex[key] = value.hex
+// Theme colors (hex values fallbacks and oklch)
+const themeColorsValues = useThemeColors()
+const themeColors: { [string: string]: Array<string> | string } = {}
+for (const [key, value] of Object.entries(themeColorsValues)) {
+  themeColors[key] = new Color(value.hex).to('oklch').toString()
 }
 
 // https://github.com/unocss/unocss/tree/main/packages/nuxt
@@ -40,6 +41,9 @@ export default defineConfig({
         },
       },
       prefix: 'i-',
+      extraProperties: {
+        display: 'inline-block',
+      },
     }),
   ],
 
@@ -50,14 +54,16 @@ export default defineConfig({
 
   theme: {
     colors: {
-      bb: themeColorsHex,
+      // BeeBest theme
+      bb: themeColors,
     },
   },
 
   rules: [
     ['font-serif', { 'font-family': 'Cormorant Garamond' }],
-    ['font-sans', { 'font-family': 'Geist' }],
+    ['font-sans', { 'font-family': 'DM Sans' }],
     ['font-body', { 'font-family': 'Vollkorn' }],
+    ['font-mono', { 'font-family': 'IBM Plex Mono' }],
     ['font-outline', { 'font-family': 'Ostrich Sans' }],
     ['font-display', { 'font-family': 'Blackout' }],
   ],

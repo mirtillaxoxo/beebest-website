@@ -1,7 +1,7 @@
 import type { AppHeadMetaObject } from '@nuxt/schema'
 
 import { useThemeColors } from '../composables/useThemeColors'
-const { honey, backgroundWhite } = useThemeColors()
+const { honey, backgroundwhite } = useThemeColors()
 
 // FAVICONS
 // TO invalidate favicon Chache
@@ -40,12 +40,12 @@ export const faviconLinks: AppHeadMetaObject['link'] = [
 
 export const appColorsMeta: AppHeadMetaObject['meta'] = [
   {
+    name: 'theme-color',
+    content: backgroundwhite?.hex,
+  },
+  {
     name: 'msapplication-TileColor',
     content: '#2b5797',
     // #TODO: extract this into a variable
-  },
-  {
-    name: 'theme-color',
-    content: backgroundWhite?.hex,
   },
 ]

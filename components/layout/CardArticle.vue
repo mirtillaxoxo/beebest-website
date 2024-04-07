@@ -9,7 +9,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
   <article class="bb-card">
-    <header style="border-left: 3px solid var(--light-grey, #d0d0d0)">
+    <header class="border-3 border-bb-lightgrey">
       <slot name="title"></slot>
     </header>
     <slot></slot>

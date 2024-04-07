@@ -9,17 +9,14 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
   <header class="mt-4 mb-1 px-5 relative">
-    <div
-      class="flex justify-between items-center border-b"
-      style="border-color: var(--light-grey, #d0d0d0)"
-    >
+    <div class="flex justify-between items-center border-b border-bb-lightgrey">
       <NuxtLink to="/">
         <h1 class="font-serif font-semibold text-3xl leading-6">
           BEE <br />BEST
         </h1>
       </NuxtLink>
 
-      <nav class="hidden md:block">
+      <nav class="hidden md:block" aria-label="primary-navigation">
         <LayoutPagesList
           :modal-dialog="modalDialog"
           class="header-pages-list"
@@ -29,25 +26,15 @@ const props = withDefaults(defineProps<Props>(), {
       <button
         type="button"
         @click="modalDialog?.showModal()"
-        class="md:hidden px-10 py-4 border-l uppercase font-semibold"
-        style="
-          border-color: var(--light-grey, #d0d0d0);
-          color: var(--light-grey, #d0d0d0);
-        "
+        class="md:hidden px-10 py-4 border-l border-bb-lightgrey text-bb-middlegrey uppercase font-bold font-mono"
       >
         Menu
       </button>
     </div>
 
-    <figure class="absolute w-full flex justify-center h-7 top-12.8 left-0">
-      <img
-        src="~/assets/graphics/logos/beebest_bee-glyph.svg"
-        alt="Bee Best Bee Glyph"
-        class="h-full px-1 bg-white"
-        style="background-color: var(--background-white, #f1f1f1)"
-      />
-    </figure>
-    <p class="absolute -bottom-5.5 text-sm font-semibold text-bb-honey">
+    <p
+      class="absolute -bottom-4.5 font-sans uppercase text-xs font-semibold text-bb-honey"
+    >
       we believe in improving
     </p>
   </header>
@@ -55,7 +42,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 <style scoped>
 .header-pages-list {
-  @apply py-4 flex gap-8;
+  @apply py-4 flex gap-8
+  font-mono;
 }
 .header-pages-list :deep(.router-link-active) {
   @apply underline decoration-bb-honey;
