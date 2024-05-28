@@ -62,3 +62,11 @@ body {
 
   box-shadow: var(--shadow-elevation-low);
 }
+
+.section-title {
+  @apply flex items-center gap-2.5
+  uppercase;
+}
+.section-title > span:first-of-type {
+  @apply text-xl;
+}
